@@ -1,5 +1,10 @@
 # Digimon
 
+Página de pesquisa de Digimon por nome e por level
+Apresentado utilizando Angular e o css através do Tailwind (https://tailwindcss.com/docs/guides/angular).
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 ## Development server
