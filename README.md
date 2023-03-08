@@ -1,7 +1,8 @@
 # Digimon
 
-Página de pesquisa de Digimon por nome e por level
+Página de pesquisa de Digimon por nome e por level.
 Apresentado utilizando Angular e o css através do Tailwind (https://tailwindcss.com/docs/guides/angular).
+
 
 
 
