@@ -1,0 +1,53 @@
+<div class="">
+  <main style="padding: 0 100px">
+
+    <div class="w-full items-center text-center">
+      <h1 class="text-blue-700 text-5xl mt-4">Digimon</h1>
+
+      <div class="flex flex-row justify-center my-2">
+        <div>
+          <h1 class="text-white text-xl">Pesquisar Nome:</h1>
+          <input class="pl-4 p-1 m-2 border-2 border-blue-600 rounded-lg" [(ngModel)]="searchModelName" placeholder="Pesquisar o digimon">
+        </div>
+
+        <div>
+          <h1 class="text-white text-xl">Pesquisar Level:</h1>
+          <input class="pl-4 p-1 m-2 border-2 border-blue-600 rounded-lg" [(ngModel)]="searchModelLevel" placeholder="Pesquisar o level">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 ">
+      <mat-card
+        *ngFor="let digimon of digimonList | searchFilter: searchModelName | searchFilterLevel: searchModelLevel">
+        <div class="grid grid-cols-2 bg-blue-400 border-2 border-blue-600 rounded-lg">
+          <img class="rounded-l-lg" style="height: 150px;" src="{{digimon.img}}" alt="">
+          <div class="grid grid-rows-2 items-center">
+            <div class="text-white text-2xl">Nome: {{digimon.name}}</div>
+            <div class="text-white text-2xl">Level: {{digimon.level}}</div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+
+
+
+    <!-- <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Nível</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let digimon of digimonList | searchFilter: searchModelName | searchFilterLevel: searchModelLevel">
+          <td><img style="height: 80px;" src="{{digimon.img}}" alt=""></td>
+          <td>{{digimon.name}}</td>
+          <td>{{digimon.level}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+  </main>
+</div>
