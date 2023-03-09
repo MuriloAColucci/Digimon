@@ -6,12 +6,12 @@
 
       <div class="flex flex-row justify-center my-2">
         <div>
-          <h1 class="text-white text-xl">Pesquisar Nome:</h1>
+          <h1 class="text-blue-700 text-xl">Pesquisar Nome:</h1>
           <input class="pl-4 p-1 m-2 border-2 border-blue-600 rounded-lg" [(ngModel)]="searchModelName" placeholder="Pesquisar o digimon">
         </div>
 
         <div>
-          <h1 class="text-white text-xl">Pesquisar Level:</h1>
+          <h1 class="text-blue-700 text-xl">Pesquisar Level:</h1>
           <input class="pl-4 p-1 m-2 border-2 border-blue-600 rounded-lg" [(ngModel)]="searchModelLevel" placeholder="Pesquisar o level">
         </div>
       </div>
@@ -29,25 +29,6 @@
         </div>
       </mat-card>
     </div>
-
-
-
-    <!-- <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Image</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Nível</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let digimon of digimonList | searchFilter: searchModelName | searchFilterLevel: searchModelLevel">
-          <td><img style="height: 80px;" src="{{digimon.img}}" alt=""></td>
-          <td>{{digimon.name}}</td>
-          <td>{{digimon.level}}</td>
-        </tr>
-      </tbody>
-    </table> -->
-
+    
   </main>
 </div>
